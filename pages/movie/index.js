@@ -43,7 +43,7 @@ const Movie = () => {
                         mainData.length > 0 ?
                             <div className={styles.card_section}>
                                 {mainData.map((curElem) => (
-                                    <MovieCard key={curElem.jawSummary.id} {...curElem} />
+                                    <MovieCard {...curElem} />
                                 ))}
                             </div>
                             :
