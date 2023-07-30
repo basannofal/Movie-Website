@@ -3,8 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 const MovieCard = (curElem) => {
     
+
+    if (!curElem.jawSummary) {
+        return null; // Or you can return a placeholder component or message if needed
+    }
+    
     const {id, type, title, synopsis} = curElem.jawSummary;
 
+    
     return (
         <>
             <div className={styles.card}>
