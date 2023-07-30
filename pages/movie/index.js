@@ -6,9 +6,10 @@ const Movie = () => {
     const [mainData, setMainData] = useState([]);
 
     useEffect(() => {
+        
         const fetchMovieData = async () => {
 
-            const url = 'https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20&lang=en';
+            const url = process.env.NEXT_PUBLIC_NETFLIX_API;
             const options = {
                 method: 'GET',
                 headers: {
