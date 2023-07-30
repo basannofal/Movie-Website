@@ -7,7 +7,7 @@ const Page = () => {
     const [mainData, setMainData] = useState(null);
     const router = useRouter();
     const { id } = router.query;
-    console.log(id);
+
     useEffect(() => {
         const fetchData = async () => {
             // const id = params.id;
