@@ -2,7 +2,7 @@ import styles from '../styles/common.module.css'
 import Image from "next/image";
 import Link from "next/link";
 const MovieCard = (curElem) => {
-
+    
     const {id, type, title, synopsis} = curElem.jawSummary;
 
     return (
